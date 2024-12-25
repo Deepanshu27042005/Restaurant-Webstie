@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 1rem 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #555;
+    }
+
+    .home-button {
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      background-color: #28a745;
+      color: white;
+      font-size: 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .home-button:hover {
+      background-color: #218838;
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 2rem 0;
+    }
+
+    .menu-item {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .menu-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .menu-content {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .menu-content h3 {
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+      color: #333;
+    }
+
+    .menu-content p {
+      font-size: 0.9rem;
+      color: #666;
+      margin: 0.5rem 0 1rem;
+    }
+
+    .menu-content .price {
+      font-weight: bold;
+      color: #28a745;
+    }
+
+    footer {
+      background: #fff;
+      padding: 1rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <h1>Our Menu</h1>
+      <a href="index.html" class="home-button">Home</a>
+    </div>
+  </header>
+  <main class="container">
+    <div class="menu-items">
+      <!-- Menu Items with Easily Available Images -->
+      <div class="menu-item">
+        <img src="https://th.bing.com/th/id/OIP.piJ0ihxuWsTTSxcqZTWa0wHaLG?rs=1&pid=ImgDetMain" alt="Paneer Butter Masala">
+        <div class="menu-content">
+          <h3>Veg Chiken</h3>
+          <div class="price">₹250</div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://th.bing.com/th/id/OIP.Bmui8r3XxTzNbohdpsrioAHaHa?w=197&h=197&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Veg Biryani">
+        <div class="menu-content">
+          <h3>Veg Biryani</h3>
+          <div class="price">₹200</div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://th.bing.com/th/id/OIP.2KuadCDK_Tpm5xBPh62fjAHaKJ?w=181&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Chole Bhature">
+        <div class="menu-content">
+          <h3>Chole Bhature</h3>
+          <div class="price">₹180</div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="http://ts4.mm.bing.net/th?id=OIP.4GExOnO2VtU0LlWSusqG2AHaLG&pid=15.1" alt="Dal Tadka">
+        <div class="menu-content">
+          <h3>Dal Tadka</h3>
+          <div class="price">₹150</div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://www.cookwithkushi.com/wp-content/uploads/2021/03/Best_aloo_paratha_mashed_potato_flatbread.jpg" alt="Aloo Paratha">
+        <div class="menu-content">
+          <h3>Aloo Paratha</h3>
+          <div class="price">₹120</div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEACwsLCwvLDI3NzJFS0JLRWZeVlZeZptvd293b5vrk6yTk6yT69D8zb/N/ND///////////////////////////8BLCwsLC8sMjc3MkVLQktFZl5WVl5mm293b3dvm+uTrJOTrJPr0PzNv8380P/////////////////////////////CABEIAQIAwgMBIgACEQEDEQH/xAAZAAACAwEAAAAAAAAAAAAAAAACAwABBAX/2gAIAQEAAAAA5tm1FR8iZVRhqhOYFLEQN6wYtlIKCbYsnyBQhDCPioqypthLNypAWwWpOo6gaoCEwVqqQqoBZRiTQQJypUUT2WNlkIoVtUEVDGMi5vSB3nhHCSAtAKZcdQHqy228j5GYKZYBdFDbCcIUdZn0D1VLWqG8iNgNSupeUTdBGMyvMROyBzxBcmJlNA1ko2Uy2ma4smAAZrNTRtZRj3qw9LPXRWkGLLmWbTylCtgaJWsHLetQAznHcWomw2G2YeoeLqpVabXzaYzNbIZt1KmDWGbu1i1CpvEmnLGQ7ZEPZjfM+nqqlqbxjWJA0ypMnRxPZR66sQDnRNOU8ysZWvTmzsZojRSHOWN06ONsyrDr6MMWi9exIcdy4LXkZuyBGux59PS5O3akeI515Q6EMtsRSEumHXM79p8YNF3ifsK3vDnnmXsRpfmJmbKyTRgre2FoNXPdFs0tDLWAaNqbG+rKNl5iyadR1zASzNCg2ULqGEuROjFebTlmnAdQxs0n1dFAI3h6Cw553eQpDsXqqP3bZkuDz8jtIVksrpshoqTpBitdRkeJZjCpbyOHHmjEkjJuSqj5AK4LjZF7348tti8dHrxLYxdlCjFJ1bhWUAMdv2c9QsesLsSNKWaNRLlZ0UetnOmoCy2c1YlHteQAWdCp/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwT/2gAKAgIQAxAAAADNRQojOrpksQqAIW2AjWSChRM6qLJNACWWyULkiqhEmlaC4AsjG7zaubZuXeIsLjLn3mY1NxZvpzlsRyxvHTcMVvpyl1bBiZzuWVMprtiN6C8pnj31rE6ZzqmdS6xehyvLy+hrpXRnM1nebczWrm8ca49Vti56nTXMWSxmImtpc+mOnmJQEzreVm8enOuvFzcyM651OwLnM32mGQisatSm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" alt="Palak Paneer">
+        <div class="menu-content">
+          <h3>Palak Paneer</h3>
+          <div class="price">₹240</div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://vismaifood.com/storage/app/uploads/public/ed3/817/fa2/thumb__1200_0_0_0_auto.jpg" alt="Mix Veg Curry">
+        <div class="menu-content">
+          <h3>Mix Veg Curry</h3>
+          <div class="price">₹200</div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://www.cookwithmanali.com/wp-content/uploads/2020/03/Malai-Kofta-Recipe-768x1164.jpg" alt="Malai Kofta">
+        <div class="menu-content">
+          <h3>Malai Kofta</h3>
+          <div class="price">₹280</div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2014/11/paneer-butter-masala-recipe-2.jpg" alt="Veg Manchurian">
+        <div class="menu-content">
+          <h3>Paneer Butter Masala</h3>
+          <div class="price">₹220</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    © 2024 Your Restaurant. All Rights Reserved.
+  </footer>
+</body>
+
+</html>
